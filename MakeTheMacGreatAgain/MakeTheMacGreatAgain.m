@@ -7,60 +7,58 @@
 //
 
 #import "MakeTheMacGreatAgain.h"
+#import "JRSwizzle.h"
 
-@interface MakeTheMacGreatAgain()
+@interface IDETemplateInstantiationContext
+-(NSArray *)arrayBySortingSections:(NSArray *)sections;
+@end
+@interface IDETemplateSection
+-(NSString *)navigableItem_name;
+@end
 
-@property (nonatomic, strong, readwrite) NSBundle *bundle;
+@implementation NSObject (SwizzledMethods)
+
+/**
+ * All this method does is take the sections that Xcode has sorted, and 
+ * then re-order them so that the OS X section is first.
+ */
+-(NSArray *)mtmga_arrayBySortingSections:(NSArray *)sections {
+	// ask Xcode to sort using the original swizzled method
+	NSArray *xCodeSortedSections = [self mtmga_arrayBySortingSections:sections];
+	
+	// now pull out the "OS X" section and it to our new list
+	NSMutableArray *macsAreGreatSections = [NSMutableArray array];
+	for (IDETemplateSection *section in xCodeSortedSections) {
+		if ([[section navigableItem_name] isEqualToString:@"OS X"]) {
+			[macsAreGreatSections addObject:section];
+		}
+	}
+	// now add the rest of them...
+	for (IDETemplateSection *section in xCodeSortedSections) {
+		if (![[section navigableItem_name] isEqualToString:@"OS X"]) {
+			[macsAreGreatSections addObject:section];
+		}
+	}
+	return macsAreGreatSections;
+}
+
 @end
 
 @implementation MakeTheMacGreatAgain
 
-+ (instancetype)sharedPlugin
-{
-    return sharedPlugin;
++(instancetype)sharedPlugin {
+	return sharedPlugin;
 }
 
-- (id)initWithBundle:(NSBundle *)plugin
-{
-    if (self = [super init]) {
-        // reference to plugin's bundle, for resource access
-        self.bundle = plugin;
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(didApplicationFinishLaunchingNotification:)
-                                                     name:NSApplicationDidFinishLaunchingNotification
-                                                   object:nil];
-    }
-    return self;
-}
-
-- (void)didApplicationFinishLaunchingNotification:(NSNotification*)noti
-{
-    //removeObserver
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
-    
-    // Create menu items, initialize UI, etc.
-    // Sample Menu Item:
-    NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
-    if (menuItem) {
-        [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-        NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(doMenuAction) keyEquivalent:@""];
-        //[actionMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
-        [actionMenuItem setTarget:self];
-        [[menuItem submenu] addItem:actionMenuItem];
-    }
-}
-
-// Sample Action, for menu item:
-- (void)doMenuAction
-{
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"Hello, World"];
-    [alert runModal];
-}
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+-(id)initWithBundle:(NSBundle *)plugin {
+	if (self = [super init]) {
+		NSError *error = nil;
+		Class clazz = NSClassFromString(@"IDETemplateInstantiationContext");
+		if (![clazz jr_swizzleMethod:@selector(arrayBySortingSections:) withMethod:@selector(mtmga_arrayBySortingSections:) error:&error]) {
+			NSLog(@"Unable to swizzle sort method: %@", error);
+		}
+	}
+	return self;
 }
 
 @end

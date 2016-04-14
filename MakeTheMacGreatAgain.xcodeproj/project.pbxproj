@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2F268B1CC0469000372DAE /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2F268A1CC0469000372DAE /* JRSwizzle.m */; };
 		BFA316781CC0445700C134DE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA316771CC0445700C134DE /* AppKit.framework */; };
 		BFA3167A1CC0445700C134DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA316791CC0445700C134DE /* Foundation.framework */; };
 		BFA3167E1CC0445700C134DE /* MakeTheMacGreatAgain.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = BFA3167D1CC0445700C134DE /* MakeTheMacGreatAgain.xcscheme */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF2F26891CC0469000372DAE /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		BF2F268A1CC0469000372DAE /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		BFA316741CC0445700C134DE /* MakeTheMacGreatAgain.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeTheMacGreatAgain.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA316771CC0445700C134DE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		BFA316791CC0445700C134DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -72,6 +75,8 @@
 				BFA316801CC0445700C134DE /* MakeTheMacGreatAgain.m */,
 				BFA316821CC0445700C134DE /* NSObject_Extension.h */,
 				BFA316831CC0445700C134DE /* NSObject_Extension.m */,
+				BF2F26891CC0469000372DAE /* JRSwizzle.h */,
+				BF2F268A1CC0469000372DAE /* JRSwizzle.m */,
 				BFA316851CC0445700C134DE /* Info.plist */,
 				BFA3167C1CC0445700C134DE /* Supporting Files */,
 			);
@@ -154,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA316811CC0445700C134DE /* MakeTheMacGreatAgain.m in Sources */,
+				BF2F268B1CC0469000372DAE /* JRSwizzle.m in Sources */,
 				BFA316841CC0445700C134DE /* NSObject_Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +291,7 @@
 				BFA3168A1CC0445700C134DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
