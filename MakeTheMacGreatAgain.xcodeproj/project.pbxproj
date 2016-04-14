@@ -19,6 +19,7 @@
 		BF2F26891CC0469000372DAE /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		BF2F268A1CC0469000372DAE /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		BF71A5C71CC052A400CC5EE0 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		BF71A5C81CC053B800CC5EE0 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = SOURCE_ROOT; };
 		BFA316741CC0445700C134DE /* MakeTheMacGreatAgain.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeTheMacGreatAgain.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA316771CC0445700C134DE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		BFA316791CC0445700C134DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -46,6 +47,7 @@
 		BFA3166B1CC0445700C134DE = {
 			isa = PBXGroup;
 			children = (
+				BF71A5C81CC053B800CC5EE0 /* readme.md */,
 				BFA3167B1CC0445700C134DE /* MakeTheMacGreatAgain */,
 				BFA316761CC0445700C134DE /* Frameworks */,
 				BFA316751CC0445700C134DE /* Products */,
