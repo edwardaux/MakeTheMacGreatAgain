@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFA316781CC0445700C134DE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA316771CC0445700C134DE /* AppKit.framework */; };
+		BFA3167A1CC0445700C134DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA316791CC0445700C134DE /* Foundation.framework */; };
+		BFA3167E1CC0445700C134DE /* MakeTheMacGreatAgain.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = BFA3167D1CC0445700C134DE /* MakeTheMacGreatAgain.xcscheme */; };
+		BFA316811CC0445700C134DE /* MakeTheMacGreatAgain.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA316801CC0445700C134DE /* MakeTheMacGreatAgain.m */; };
+		BFA316841CC0445700C134DE /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA316831CC0445700C134DE /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFA316741CC0445700C134DE /* MakeTheMacGreatAgain.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeTheMacGreatAgain.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA316771CC0445700C134DE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		BFA316791CC0445700C134DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		BFA3167D1CC0445700C134DE /* MakeTheMacGreatAgain.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = MakeTheMacGreatAgain.xcscheme; path = MakeTheMacGreatAgain.xcodeproj/xcshareddata/xcschemes/MakeTheMacGreatAgain.xcscheme; sourceTree = SOURCE_ROOT; };
+		BFA3167F1CC0445700C134DE /* MakeTheMacGreatAgain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeTheMacGreatAgain.h; sourceTree = "<group>"; };
+		BFA316801CC0445700C134DE /* MakeTheMacGreatAgain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeTheMacGreatAgain.m; sourceTree = "<group>"; };
+		BFA316821CC0445700C134DE /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		BFA316831CC0445700C134DE /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		BFA316851CC0445700C134DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFA316721CC0445700C134DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA316781CC0445700C134DE /* AppKit.framework in Frameworks */,
+				BFA3167A1CC0445700C134DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFA3166B1CC0445700C134DE = {
+			isa = PBXGroup;
+			children = (
+				BFA3167B1CC0445700C134DE /* MakeTheMacGreatAgain */,
+				BFA316761CC0445700C134DE /* Frameworks */,
+				BFA316751CC0445700C134DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFA316751CC0445700C134DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFA316741CC0445700C134DE /* MakeTheMacGreatAgain.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFA316761CC0445700C134DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFA316771CC0445700C134DE /* AppKit.framework */,
+				BFA316791CC0445700C134DE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFA3167B1CC0445700C134DE /* MakeTheMacGreatAgain */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3167F1CC0445700C134DE /* MakeTheMacGreatAgain.h */,
+				BFA316801CC0445700C134DE /* MakeTheMacGreatAgain.m */,
+				BFA316821CC0445700C134DE /* NSObject_Extension.h */,
+				BFA316831CC0445700C134DE /* NSObject_Extension.m */,
+				BFA316851CC0445700C134DE /* Info.plist */,
+				BFA3167C1CC0445700C134DE /* Supporting Files */,
+			);
+			path = MakeTheMacGreatAgain;
+			sourceTree = "<group>";
+		};
+		BFA3167C1CC0445700C134DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3167D1CC0445700C134DE /* MakeTheMacGreatAgain.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFA316731CC0445700C134DE /* MakeTheMacGreatAgain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA316881CC0445700C134DE /* Build configuration list for PBXNativeTarget "MakeTheMacGreatAgain" */;
+			buildPhases = (
+				BFA316701CC0445700C134DE /* Sources */,
+				BFA316711CC0445700C134DE /* Resources */,
+				BFA316721CC0445700C134DE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MakeTheMacGreatAgain;
+			productName = MakeTheMacGreatAgain;
+			productReference = BFA316741CC0445700C134DE /* MakeTheMacGreatAgain.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFA3166C1CC0445700C134DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "BlackDog Foundry Pty Ltd";
+				TargetAttributes = {
+					BFA316731CC0445700C134DE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = BFA3166F1CC0445700C134DE /* Build configuration list for PBXProject "MakeTheMacGreatAgain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFA3166B1CC0445700C134DE;
+			productRefGroup = BFA316751CC0445700C134DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFA316731CC0445700C134DE /* MakeTheMacGreatAgain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFA316711CC0445700C134DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA3167E1CC0445700C134DE /* MakeTheMacGreatAgain.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFA316701CC0445700C134DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA316811CC0445700C134DE /* MakeTheMacGreatAgain.m in Sources */,
+				BFA316841CC0445700C134DE /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BFA316861CC0445700C134DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		BFA316871CC0445700C134DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		BFA316891CC0445700C134DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = MakeTheMacGreatAgain/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.MakeTheMacGreatAgain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		BFA3168A1CC0445700C134DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = MakeTheMacGreatAgain/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.MakeTheMacGreatAgain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFA3166F1CC0445700C134DE /* Build configuration list for PBXProject "MakeTheMacGreatAgain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA316861CC0445700C134DE /* Debug */,
+				BFA316871CC0445700C134DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA316881CC0445700C134DE /* Build configuration list for PBXNativeTarget "MakeTheMacGreatAgain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA316891CC0445700C134DE /* Debug */,
+				BFA3168A1CC0445700C134DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFA3166C1CC0445700C134DE /* Project object */;
+}
