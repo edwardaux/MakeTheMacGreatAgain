@@ -12,7 +12,7 @@
 @interface IDETemplateInstantiationContext
 -(NSArray *)arrayBySortingSections:(NSArray *)sections;
 @end
-@interface IDETemplateSection
+@interface IDETemplateSection: NSObject
 -(NSString *)navigableItem_name;
 @end
 
@@ -29,17 +29,31 @@
 	// now pull out the "OS X" section and it to our new list
 	NSMutableArray *macsAreGreatSections = [NSMutableArray array];
 	for (IDETemplateSection *section in xCodeSortedSections) {
-		if ([[section navigableItem_name] isEqualToString:@"OS X"]) {
+		if ([[section navigableItem_name] isEqualToString:@"MacOS"]) {
 			[macsAreGreatSections addObject:section];
 		}
 	}
 	// now add the rest of them...
 	for (IDETemplateSection *section in xCodeSortedSections) {
-		if (![[section navigableItem_name] isEqualToString:@"OS X"]) {
+		if (![[section navigableItem_name] isEqualToString:@"MacOS"]) {
 			[macsAreGreatSections addObject:section];
 		}
 	}
 	return macsAreGreatSections;
+}
+
+/**
+ * We all know that for the Mac to be truely great again we must return to
+ * what our forfathers used. MacOS.
+ */
+-(NSString *)mtmga_navigableItem_name {
+    NSString *name = [self mtmga_navigableItem_name];
+
+    if ([name isEqualToString:@"OS X"]) {
+        name = @"MacOS";
+    }
+
+    return name;
 }
 
 @end
@@ -57,6 +71,10 @@
 		if (![clazz jr_swizzleMethod:@selector(arrayBySortingSections:) withMethod:@selector(mtmga_arrayBySortingSections:) error:&error]) {
 			NSLog(@"Unable to swizzle sort method: %@", error);
 		}
+        Class clazzz = NSClassFromString(@"IDETemplateSection");
+        if (![clazzz jr_swizzleMethod:@selector(navigableItem_name) withMethod:@selector(mtmga_navigableItem_name) error:&error]) {
+            NSLog(@"Unable to swizzle name method: %@", error);
+        }
 	}
 	return self;
 }
