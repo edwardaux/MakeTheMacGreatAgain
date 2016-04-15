@@ -12,7 +12,7 @@
 @interface IDETemplateInstantiationContext
 -(NSArray *)arrayBySortingSections:(NSArray *)sections;
 @end
-@interface IDETemplateSection: NSObject
+@interface IDETemplateSection
 -(NSString *)navigableItem_name;
 @end
 
