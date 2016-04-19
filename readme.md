@@ -3,3 +3,6 @@ This is a simple Xcode plugin that always make sure that the OS X templates are 
 when creating new files or projects.
 
 <img src="https://raw.githubusercontent.com/edwardaux/MakeTheMacGreatAgain/master/MakeTheMacGreatAgain/screenshot.png"/>
+
+### License
+Released under the MIT license.
